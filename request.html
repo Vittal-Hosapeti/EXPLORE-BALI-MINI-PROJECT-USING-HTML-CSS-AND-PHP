@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Form - Explore Bali</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("P12.jpg") no-repeat center center fixed;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body class="fade" style="padding-top: 4%">
+    <nav class="navbar">
+      <div class="logo">Explore Bali</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a class="active" href="request.html">Request Form</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="page">
+      <h2>Request Form</h2>
+      <form class="form-box" action="connect.php" method="post">
+        <input type="text" placeholder="Your Name" name="yourName" required />
+        <input
+          type="number"
+          placeholder="Your Phone-Number"
+          name="yournum"
+          required
+        />
+        <input type="email" placeholder="Email Address" name="email" required />
+        <textarea
+          placeholder="Your Request"
+          required
+          name="requestt"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <footer>WANT TO MAKE YOUR LIFE COLOURFULL , LETS GO TO BALI</footer>
+  </body>
+</html>
